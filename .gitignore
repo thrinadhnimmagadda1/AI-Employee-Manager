@@ -1,0 +1,68 @@
+# Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Models — large binary files, exclude from git
+models/*.pkl
+models/*.joblib
+models/*.bin
+models/*.pt
+models/emotion_classifier/
+models/burnout_model.pkl
+models/attrition_model.pkl
+models/conflict_model.pkl
+
+# Keep metrics.json (small, human-readable, useful for README)
+!models/metrics.json
+!models/.gitkeep
+
+# Data — never commit raw datasets or processed CSVs
+data/raw/
+data/processed/
+data/chroma/
+
+# Node
+node_modules/
+frontend/build/
+frontend/.env.local
+
+# Docker
+*.log
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid

@@ -1,0 +1,33 @@
+{
+  "trained_at": "2026-04-07T05:37:32.149683Z",
+  "models": {
+    "burnout_predictor": {
+      "model": "burnout_predictor",
+      "accuracy": 0.9217,
+      "precision": 0.8241,
+      "recall": 0.8464,
+      "f1": 0.8351,
+      "auc": 0.9663,
+      "elapsed_s": 3.3,
+      "save_path": "models/burnout_model.pkl"
+    },
+    "attrition_model": {
+      "model": "attrition_model",
+      "accuracy": 0.9277,
+      "f1": 0.8438,
+      "auc": 0.9676,
+      "elapsed_s": 1.6,
+      "save_path": "models/attrition_model.pkl"
+    },
+    "conflict_detector": {
+      "model": "conflict_detector",
+      "f1": 1.0,
+      "auc": 1.0,
+      "training_data": "HR Analytics proxy labels",
+      "label_rule": "satisfaction_level < 0.30 AND average_montly_hours > 250",
+      "elapsed_s": 0.1,
+      "save_path": "models/conflict_model.pkl"
+    }
+  },
+  "_last_retrained": "2026-04-07T06:01:39.442034+00:00"
+}
